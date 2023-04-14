@@ -1,5 +1,5 @@
 // Load data
-d3.csv("data/cost-of-living.csv").then((data) => {
+d3.csv("cost-of-living.csv").then((data) => {
   // Process data
   let question = data.columns[0];
   let ageGroups = ["18-24", "25-34", "35-49", "50-64", "65+"];
