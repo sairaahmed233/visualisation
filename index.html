@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Financial situation chart -->
+      <section class="section-container">
+        <div id="financail-situation-chart" class="chart-container"></div>
+        <div class="note">
+          <p
+            >Data source:
+            <a
+              href="https://data.london.gov.uk/download/the-rising-cost-of-living-and-its-effects-on- londoners/0068e600-ce0b-44c1-95cf- d76d26b2ee14/Cost%20of%20living%20cross%20tabs%20final.xlsx"
+              >The rising cost of living and its effects on Londoners</a
+            ></p
+          >
+        </div>
+      </section>
+      <!-- Fuel poverty chart -->
+      <section class="section-container">
+        <div id="fuel-poverty-chart" class="chart-container"></div>
+        <div class="note">
+          <p
+            >Data source:
+            <a
+              href="https://data.london.gov.uk/economic-fairness/further-information/"
+              >Economic fairness</a
+            ></p
+          >
+        </div>
+      </section>
+    </main>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/financial-situation-chart.js"></script>
+    <script src="js/fuel-poverty-chart.js"></script>
+  </body>
+</html>

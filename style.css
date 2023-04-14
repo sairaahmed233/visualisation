@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #222;
+}
+
+.container {
+  width: 960px;
+  margin: 48px auto;
+  display: grid;
+  gap: 48px;
+}
+
+.chart-container {
+  display: grid;
+  gap: 16px;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  padding: 8px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  min-width: 240px;
+  max-width: 480px;
+}
+
+.tooltip td {
+  vertical-align: top;
+}
+
+.tooltip .value-td {
+  text-align: right;
+  padding-left: 0.5em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.legend .legend-item {
+  cursor: pointer;
+  margin: 4px 0;
+}
+
+.legend-swatch {
+  min-width: 1em;
+  min-height: 1em;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background-color: currentColor;
+  margin-right: 0.5em;
+  transform: translateY(0.125em);
+}
+
+.legend-item.muted .legend-swatch {
+  background-color: transparent;
+}
+
+.legend-item.muted .legend-label {
+  opacity: 0.65;
+}
+
+.note {
+  color: #444;
+}
+
+.note a {
+  color: currentColor;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.axis {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.group-axis {
+  font-size: 14px;
+}
