@@ -1,5 +1,5 @@
 // Load data
-d3.csv("data/fuel-poverty.csv").then((data) => {
+d3.csv("fuel-poverty.csv").then((data) => {
   // Process data
   const dataByRegion = d3
     .rollups(
